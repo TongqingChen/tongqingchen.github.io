@@ -108,20 +108,27 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="墨鱼">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1. 使用环境 Ubuntu 18.04.1 LTS  Opencv 3.4.3  Python 3.6.5 (Anaconda3 5.2)    2. 安装步骤2.1 安装Anconda3到官网下载对应安装包，如果要安装旧版，可以google或baidu清华的镜像源。  建议配置国内的源，任何一个都可以  2.2 Opencv-python 3.4.3默认的conda install openc">
+<meta name="keywords" content="Ubuntu, Opencv, Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu18.04+Opencv3.4.3配置">
+<meta property="og:url" content="http://yoursite.com/2018/11/12/Build-opencv3-4-3-on-Ubuntu18-04/index.html">
 <meta property="og:site_name" content="墨鱼">
+<meta property="og:description" content="1. 使用环境 Ubuntu 18.04.1 LTS  Opencv 3.4.3  Python 3.6.5 (Anaconda3 5.2)    2. 安装步骤2.1 安装Anconda3到官网下载对应安装包，如果要安装旧版，可以google或baidu清华的镜像源。  建议配置国内的源，任何一个都可以  2.2 Opencv-python 3.4.3默认的conda install openc">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/home/tonychen/GitHub/source/_posts/Build-opencv3-4-3-on-Ubuntu18-04/ubuntu18.png">
+<meta property="og:updated_time" content="2018-11-13T02:30:39.570Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="墨鱼">
+<meta name="twitter:title" content="Ubuntu18.04+Opencv3.4.3配置">
+<meta name="twitter:description" content="1. 使用环境 Ubuntu 18.04.1 LTS  Opencv 3.4.3  Python 3.6.5 (Anaconda3 5.2)    2. 安装步骤2.1 安装Anconda3到官网下载对应安装包，如果要安装旧版，可以google或baidu清华的镜像源。  建议配置国内的源，任何一个都可以  2.2 Opencv-python 3.4.3默认的conda install openc">
+<meta name="twitter:image" content="http://yoursite.com/home/tonychen/GitHub/source/_posts/Build-opencv3-4-3-on-Ubuntu18-04/ubuntu18.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/12/Build-opencv3-4-3-on-Ubuntu18-04/">
 
 
 
@@ -131,7 +138,7 @@
   };
 </script>
 
-  <title>墨鱼</title>
+  <title>Ubuntu18.04+Opencv3.4.3配置 | 墨鱼</title>
   
 
 
@@ -180,8 +187,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -218,7 +224,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
   </li>
@@ -262,153 +268,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/12/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Tongqing Chen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="墨鱼">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/12/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-12 19:12:53" itemprop="dateCreated datePublished" datetime="2018-11-12T19:12:53+08:00">2018-11-12</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -440,11 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/12/Build-opencv3-4-3-on-Ubuntu18-04/" itemprop="url">
-                  Ubuntu18.04+Opencv3.4.3配置
-                </a>
+          <h1 class="post-title" itemprop="name headline">Ubuntu18.04+Opencv3.4.3配置
               
             
           </h1>
@@ -519,9 +377,7 @@
       
 
       
-        
-          
-            <h2 id="1-使用环境"><a href="#1-使用环境" class="headerlink" title="1. 使用环境"></a>1. 使用环境</h2><ul>
+        <h2 id="1-使用环境"><a href="#1-使用环境" class="headerlink" title="1. 使用环境"></a>1. 使用环境</h2><ul>
 <li><p>Ubuntu 18.04.1 LTS</p>
 </li>
 <li><p>Opencv 3.4.3</p>
@@ -573,8 +429,6 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION <span class="number">2.8</span>)</span><br><span class="line">set (OpenCV_DIR <span class="string">"/home/tonychen/opencv-3.4.3/build"</span>) <span class="comment">#添加此行</span></span><br><span class="line">project(opencv_example_project)</span><br></pre></td></tr></table></figure>
 <p>重新运行opencv_example，大功告成。</p>
 
-          
-        
       
     </div>
 
@@ -592,14 +446,36 @@
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/Ubuntu-Opencv-Linux/" rel="tag"># Ubuntu, Opencv, Linux</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/12/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -609,14 +485,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -637,8 +514,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -696,6 +582,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-使用环境"><span class="nav-number">1.</span> <span class="nav-text">1. 使用环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装步骤"><span class="nav-number">2.</span> <span class="nav-text">2. 安装步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-安装Anconda3"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 安装Anconda3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Opencv-python-3-4-3"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 Opencv-python 3.4.3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-编译OpenCV"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 编译OpenCV</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-下载源文件"><span class="nav-number">2.3.1.</span> <span class="nav-text">2.3.1 下载源文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-准备库"><span class="nav-number">2.3.2.</span> <span class="nav-text">2.3.2 准备库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-3-编译"><span class="nav-number">2.3.3.</span> <span class="nav-text">2.3.3 编译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-4-修改路径"><span class="nav-number">2.3.4.</span> <span class="nav-text">2.3.4 修改路径</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-测试"><span class="nav-number">3.</span> <span class="nav-text">3. 测试</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -826,6 +728,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
