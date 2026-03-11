@@ -79,12 +79,21 @@ body {
 @media (max-width: 768px) {
     .pub-img {
         float: none;       /* 移动端取消浮动 */
-        margin: 0 auto 15px; /* 居中+底部间距 */
-        width: 90%;        /* 占容器90%宽度 */
+        margin: 0 auto 10px; /* 居中+底部间距 */
+        width: 100%;        /* 占容器90%宽度 */
     }
 }
 
 /* 日间模式正常蓝色，夜间模式变亮蓝 */
 .text-blue {
   color: #2692ea;
+}
+
+.citation-wrapper {
+  cursor: help; /* 鼠标变成问号 */
+  border-bottom: 1px dashed #999; /* 底部虚线提示 */
+  display: inline-block;
+}
+.citation-wrapper:hover {
+  color: #007bff;
 }
