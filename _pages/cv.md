@@ -18,7 +18,7 @@ Work Experience
 ======
 * 2025: <span class="text-blue">TARS Robotics (Shanghai)</span>
   * Shanghai
-  * Co-founder & Chief Architect
+  * Co-founder & CTO
   * Duties included: Leading the development of robotics systems and end-to-end large models
 
 * 2023: <span class="text-blue">Tsinghua University AIR Institute</span>
