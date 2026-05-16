@@ -6,8 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-is currently Co-founder and Chief Architect at <span class="text-blue">TARS Robotics (它石智航)</span>. He was selected for the <span class="text-blue">2025 Shanghai Oriental Talent Program – Young Talent Project (东方英才青年计划)</span>, a prestigious municipal talent initiative supporting high-potential young researchers.
-
+is currently Co-founder and CTO at <span class="text-blue">TARS Robotics (它石智航)</span>. He was selected for the <span class="text-blue">2025 Shanghai Oriental Talent Program – Young Talent Project (东方英才青年计划)</span>, a prestigious municipal talent initiative supporting high-potential young researchers.
 
 He received his Ph.D. from <span class="text-blue">Tsinghua University</span>. Prior to that, he earned his master’s degree from <span class="text-blue">Zhejiang University</span> and his bachelor’s degree from <span class="text-blue">Shanghai Jiao Tong University</span>.
 
